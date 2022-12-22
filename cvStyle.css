@@ -54,6 +54,7 @@ h1{
 h2{
     font-size: 1.6rem;
     color: var(--maincolor);
+    background-color: var(--white);
 }
 
 p{
