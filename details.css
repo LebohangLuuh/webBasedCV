@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    background: url('./cv.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    padding: 35px 10%;
+}
+
+.container{
+    padding-right: calc(10% - 30px);
+}
+
+main.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.col header.title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+    padding: 0px 0px 20px 30px;
+}
+
+.col .contents{
+    padding: 0px 30px;
+    border-left: 2px solid aqua;
+}
+
+.col .contents .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid aqua;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.4ms;
+    margin-bottom: 20px;
+}
+
+.col .contents .box:hover{
+    box-shadow: 0px 3px 12px 0px;
+    border: 1px solid blue; /*transparent+++++*/
+}
+
+.col .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc( 100% + 22px);
+    top: 0;
+    background-color: yellow; /*change the color*/
+    border:  2px solid white;
+}
+
+.box h4{
+    position: relative;
+    color: orange;
+}
+
+.box h3{
+font-size: 19px;
+padding: 10px 0px 6px;
+font-family: Arial, Helvetica, sans-serif;
+color: #444;
+}
+
+.box p{
+line-height: 1.2;
+    color: #666;
+    font-size: 17px;
+}
+
+.container button{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 50px 190px;
+    padding: 10px 15px;
+    width: 30%;
+    border-radius: 5px;
+    border: 0;
+    color: blue;
+    background-color: yellow;
+    box-align: end;
+
+}
+
+@media(max-width:765px){
+    main.row{
+        grid-template-columns: 1fr;
+    }
+    .row .col:nth-child(2){
+        margin-top: 30px;
+    }
+}
