@@ -206,17 +206,17 @@ main .right{
     font-size: 35px;
     color: var(--blue);
     justify-content: center;
-    border: 1px orange solid;
+   
     border-color: orange;
     border-radius: 25px;
 }
 #search{
     font-size: 25px;
-    padding: 10px;
-    outline: none;
+    padding: 15px;
+    outline:blue;
     border-radius: 25px;
-    border: none;
-    box-shadow: orange;
+    border:none;
+    box-shadow: 0px 0px 15px blue;
 }
 
 main .box:first-of-type{
