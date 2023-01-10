@@ -104,9 +104,9 @@ ul{
  .container button{
     font-size: 20px;
     font-weight: bold;
-    margin: 50px 190px;
+    margin: 50px 300px;
     padding: 10px 15px;
-    width: 30%;
+    width: 20%;
     border-radius: 5px;
     border: 0;
     color: var(--blue);
@@ -185,6 +185,7 @@ header.header-text .contact i{
 main{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    
 }
 
 main .left,
@@ -192,10 +193,35 @@ main .right{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+
+
+.row{
+    width: 450px;
+    display: flex;
+    margin: 10px;
+    font-size: 35px;
+    color: var(--blue);
+    justify-content: center;
+   
+    border-color: orange;
+    border-radius: 25px;
+}
+#search{
+    font-size: 25px;
+    padding: 15px;
+    outline:blue;
+    border-radius: 25px;
+    border:none;
+    box-shadow: 0px 0px 15px blue;
 }
 
 main .box:first-of-type{
-    margin-top: 2rem;
+    margin-top: 2rem; 
+    
 }
 
 main .box .title{
@@ -305,6 +331,9 @@ main .box p{
     background-color: #ffffff;
 }
 
+
+
+
 @media(min-width: 965px){
     h1{
         font-size: 4.5rem;
@@ -320,3 +349,4 @@ main .box p{
 }
 
 }
+
