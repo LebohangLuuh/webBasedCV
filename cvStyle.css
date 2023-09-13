@@ -235,6 +235,7 @@ margin: 2rem 0;
 font-size: 2rem;
 position: relative;
 color: var(--picBG);
+padding-left: 55px;
 }
 
 main .box .title h2::before{
